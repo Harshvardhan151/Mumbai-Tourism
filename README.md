@@ -30,8 +30,10 @@ A mini project built using **HTML, CSS, PHP**, and **MySQL** to promote tourism 
 4. Open `phpMyAdmin` and:
    - Create a new DB (e.g. `mumbai_tourism`)
    - Import `mumbai_tourism.sql` file from this repo
-5. Go to [localhost/mumbai-tourism](http://localhost/mumbai-tourism) in browser
+5. Go to [localhost/mumbai-tourism](http://localhost/mumbai_tourism) in browser
 
 ---
 
-## 📂 Folder Structure
+## 🙌 Team
+Built with ❤️ by Harshvardhan
+
