@@ -3,103 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Mumbai | Home</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <script>
-        function initMap() {
-            var mumbai = { lat: 19.0760, lng: 72.8777 };
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 12,
-                center: mumbai
-            });
-            var marker = new google.maps.Marker({
-                position: mumbai,
-                map: map
-            });
-        }
-    </script>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Mumbai</h1>
-        <p>The City of Dreams – A blend of heritage, culture, and modernity</p>
-        <nav>
-            <ul>
-                <li><a href="spots.html">Sightseeing</a></li>
-                <li><a href="restaurants.html">Local Eateries</a></li>
-                <li><a href="hotels.html">Stay in Comfort</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="slideshow">
-            <div class="slideshow-container">
-                <img class="slide" src="imgs/ss3.jpg" alt="Mumbai Image">
-                <img class="slide" src="imgs/cuh.avif" alt="Mumbai Image">
-                <img class="slide" src="imgs/trimg.jpg" alt="Mumbai Image">
-            </div>
-        </section>
-        <section id="intro">
-            <h2>Discover Mumbai</h2>
-            <div class="image-placeholder1">
-                <img src="imgs/hp.webp"> 
-            </div>
-            <div class="homeinfo" style="padding-left: 150px; padding-right: 150px;">
-            <p >Mumbai is more than just a city—it’s an emotion, a rhythm that never slows down. As India’s financial powerhouse, it beats with ambition, dreams, and an undying spirit. From the colonial-era charm of South Mumbai to the high-rise marvels of Bandra, every street tells a story. Iconic landmarks like the Gateway of India, Chhatrapati Shivaji Terminus, and the endless Arabian Sea coastline add to its allure. The city welcomes you with open arms, whether you come for its culture, its food, or just to chase your dreams.</p>
-        </div>
-        </section>
-        <section id="history">
-            <h2>History & Heritage</h2>
-            <div class="image-placeholder2">
-                <img src="imgs/idk.jpg" height="350px">
-            </div>
-            <div class="homeinfo" style="padding-left: 150px; padding-right: 150px;">
-            <p>Once a collection of seven islands, Mumbai’s transformation into a global metropolis is nothing short of extraordinary. The city’s colonial past is etched into its grand Victorian buildings, timeless forts, and old-world alleys. The majestic Chhatrapati Shivaji Maharaj Terminus stands as a testament to the British Raj’s architectural grandeur. The historic Elephanta Caves, a UNESCO World Heritage Site, whisper tales from ancient times. Every fort, temple, and museum here echoes the resilience and evolution of a city that has witnessed empires rise and fall.</p>
-        </div>
-        </section>
-        <section id="culture">
-            <h2>Culture & Lifestyle</h2>
-            <div>
-                <img src="imgs/ganpati.jpg" height="350px">
-            </div>
-            <div class="homeinfo" style="padding-left: 150px; padding-right: 150px;"    >
-            <p>Mumbai’s culture is an intoxicating blend of the old and the new, where centuries-old traditions meet modern-day aspirations. As the birthplace of Bollywood, the city thrives on cinematic dreams and artistic expression. The streets are a canvas for vibrant festivals, from the electrifying Ganesh Chaturthi celebrations to the serene beauty of Diwali lights. From the bustling bazaars of Colaba to the refined elegance of Prithvi Theatre, every corner is steeped in history, art, and an unbreakable passion for life.</p>
-        </div>
-        </section>
-        <section id="explore">
-            <h2>Explore More</h2>
-            <div class="explore-links">
-                <a href="spots.html" id="b1">Top Sightseeing Spots</a>
-                <a href="restaurants.html" id="b2">Best Local Eateries</a>
-                <a href="hotels.html" id="b3">Hotels for Every Budget</a>
-            </div>
-        </section>
-        <section id="map-section">
-            <h2>Find Mumbai on the Map</h2>
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Explore Mumbai | Designed for Mumbai Tourism Promotion</p>               
-    </footer>
-    <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll(".slide");
+    <div class="container">
+        <h3>Login</h3>
+        <form action="login.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        function showSlide() {
-            slides.forEach((slide, index) => {
-                slide.classList.remove("active");
-                if (index === currentIndex) slide.classList.add("active");
-            });
-            currentIndex = (currentIndex + 1) % slides.length;
-        }
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        setInterval(showSlide, 3000);
-        showSlide();
-    </script>
+            <button type="submit">Login</button>
+        </form>
+        <hr>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
 </body>
 </html>

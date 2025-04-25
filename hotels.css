@@ -51,7 +51,7 @@ main {
     text-align: center;
 }
 
-.stay-container {
+.sightseeing-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -59,7 +59,7 @@ main {
     padding: 20px;
 }
 
-.stay-card {
+.sight-card {
     background: #1C2C47;
     border-radius: 10px;
     overflow: hidden;
@@ -68,7 +68,7 @@ main {
     transition: transform 0.3s ease;
 }
 
-.stay-card:hover {
+.sight-card:hover {
     transform: scale(1.05);
 }
 
@@ -83,7 +83,7 @@ main {
     font-size: 18px;
 }
 
-.stay-card-content {
+.sight-card-content {
     padding: 15px;
 }
 
@@ -98,4 +98,23 @@ footer {
     text-align: center;
     padding: 10px;
     position: relative;
+}
+
+#e1 {
+    background-color: url(e1.webp);
+    background-size: cover;
+}
+
+#e2 {
+    background-color: url(e1.webp);
+}
+
+#e3 {
+    background-color: url(e1.webp);
+    background-size: cover;
+}
+
+#e4 {
+    background-color: url(e1.webp);
+    background-size: cover;
 }
